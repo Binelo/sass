@@ -1,0 +1,88 @@
+$main-color: #1870b8;
+$sec-color: #d4680e;
+$dark-color: #1b1b1b;
+$light-color: #f2f2f2;
+
+@mixin grid($n-cols, $param, $gap, $jus: center, $align: center) {
+    display: grid;
+    grid-template-columns: repeat($n-cols, $param);
+    gap: $gap;
+    align-items: $align;
+    @if ($param == max-content) {
+        justify-content: $jus;
+    } @else {
+        justify-items: $jus;
+    }
+}
+
+@mixin flex($gap, $wrap: wrap, $dir: row, $jus: center, $align: center) {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+    gap: $gap;
+    justify-content: $jus;
+    align-items: $align;
+}
+
+@mixin centro() {
+    max-width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin direita() {
+    max-width: fit-content;
+    margin-left: auto;
+}
+
+@mixin esquerda() {
+    max-width: fit-content;
+    margin-right: auto;
+}
+
+@mixin efeito-nav($dir) {
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: $main-color;
+    content: '';
+    transition: .3s;
+    @if ($dir == 'centro') {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @if ($dir == esq) {
+        margin-right: auto;
+    }
+    @if ($dir == dir) {
+        margin-left: auto;
+    }
+    
+}
+
+@mixin btn-bg($width, $height, $border, $dir, $color-1, $color-2: $color-1) {
+    padding: 10px;
+    border-radius: $border;
+    max-width: $width;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: $height;
+    @if ($dir == esq) {
+        box-shadow: $width 0px 0px 2px $color-1 inset;
+    }
+    @if ($dir == dir) {
+        box-shadow: -$width 0px 0px 2px $color-1 inset;
+    }
+    @if ($dir == cima) {
+        box-shadow: 0px (-$height) 0px 0px $color-1 inset;
+    }
+    @if ($dir == baixo) {
+        box-shadow: 0px $height 0px 2px $color-1 inset;
+    }
+    @if ($dir == exp) {
+        box-shadow: 0px 0px 0px $height $color-1 inset;
+    }
+}

@@ -1,0 +1,8 @@
+@mixin font-config ($f-color, $f-size, $f-weight, $f-align: inherit, $f-lineheight: 1.3em, $f-transform: inherit) {
+    font-size: $f-size;
+    font-weight: $f-weight;
+    color: $f-color;
+    line-height: $f-lineheight;
+    text-align: $f-align;
+    text-transform: $f-transform;
+}

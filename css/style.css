@@ -1,0 +1,387 @@
+/*Reset*/
+/* line 3, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 13, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* line 20, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+figcaption,
+hr,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 42, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 46, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* line 55, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+/* line 60, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+input,
+textarea,
+button {
+  border: 1px solid gray;
+}
+
+/* line 66, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+button {
+  padding: 0.75em 1em;
+  line-height: inherit;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+/* line 73, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+button * {
+  pointer-events: none;
+}
+
+/* line 77, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+img,
+iframe,
+video,
+object,
+embed {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 86, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+svg {
+  max-width: 100%;
+}
+
+/* line 90, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 95, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+[hidden] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 100, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+noscript {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+/* line 106, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+[tabindex="-1"] {
+  outline: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 111, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* line 119, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 131, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+* {
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+/* line 137, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* line 151, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 156, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+a {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+
+/* line 162, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_reset.scss */
+table {
+  border-spacing: 0px;
+}
+
+/* line 1, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 7, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+::after, ::before, svg path, a {
+  transition: .3s;
+}
+
+/* line 11, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+html {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  color: #f2f2f2;
+}
+
+/* line 17, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+body {
+  background-color: #1b1b1b;
+}
+
+/* line 22, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+section, header, main, footer {
+  padding: 60px 10px;
+}
+
+/* line 26, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1870b8;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: inherit;
+}
+
+/* line 30, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+.main h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #f2f2f2;
+  line-height: 1.3em;
+  text-align: center;
+  text-transform: inherit;
+}
+
+/* line 33, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+.servicos h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #d4680e;
+  line-height: 1.3em;
+  text-align: inherit;
+  text-transform: inherit;
+}
+
+/* line 37, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1870b8;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 40, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+h3::after {
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #1870b8;
+  content: '';
+  transition: .3s;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* line 46, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  box-shadow: 0px -50px 0px 0px #1870b8 inset;
+}
+
+/* line 48, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_geral.scss */
+.btn:hover {
+  box-shadow: 0px 0px 0px 2px #1870b8 inset;
+  color: #d4680e;
+}
+
+/* line 1, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_header.scss */
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* line 4, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_header.scss */
+.logo {
+  margin-right: auto;
+}
+
+/* line 7, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_header.scss */
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 10, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_header.scss */
+.header-nav a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f2f2f2;
+  line-height: 1.3em;
+  text-align: inherit;
+  text-transform: uppercase;
+}
+
+/* line 12, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_header.scss */
+.header-nav a:hover {
+  color: #1870b8;
+}
+
+/* line 16, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_header.scss */
+.header-nav a::after {
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #1870b8;
+  content: '';
+  transition: .3s;
+  margin-left: auto;
+}
+
+/* line 19, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_header.scss */
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+/* line 1, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_main.scss */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* line 1, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_servico.scss */
+.servicos-content {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 5, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_servico.scss */
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* line 8, ../../../OneDrive - Univille/Documentos/teste-sass/scss/_servico.scss */
+.servico-item {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

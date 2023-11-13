@@ -1,0 +1,14 @@
+.servicos-content {
+    @include grid(2, max-content, 40px);
+
+}
+.servicos-grid {
+    @include grid(1, 1fr, 40px);
+}
+.servico-item {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    @include grid(1, 1fr, 10px);
+}
+

@@ -1,0 +1,21 @@
+.header-grid {
+    @include grid(2, 1fr, 20px);
+}
+.logo {
+    margin-right: auto;
+}
+.header-nav {
+    @include flex(10px 30px);
+}
+.header-nav a {
+    @include font-config($light-color, 1.1rem, 600, inherit, 1.3em, uppercase);
+    &:hover {
+        color: $main-color;
+    }
+}
+.header-nav a::after {
+    @include efeito-nav(dir);
+}
+.header-nav a:hover::after {
+    width: 100%;
+}
